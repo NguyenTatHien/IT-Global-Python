@@ -303,4 +303,4 @@ def handle_exception(e):
     return jsonify({"success": False, "message": str(e)}), 500
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=9000, ssl_context=('localhost+1.pem', 'localhost+1-key.pem'))
+    app.run(host='0.0.0.0', port=9000, ssl_context=('SSL/localhost+1.pem', 'SSL/localhost+1-key.pem'))
