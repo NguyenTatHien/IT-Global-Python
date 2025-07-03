@@ -302,6 +302,6 @@ def handle_exception(e):
     print(traceback.format_exc())
     return jsonify({"success": False, "message": str(e)}), 500
 
-port = int(os.environ.get("PORT"), 9000)
+port = 9000
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=port)
+    app.run(host='0.0.0.0', port=port, ssl_context=('./SSL/localhost+1.pem','./SSL/localhost+1-key.pem'))

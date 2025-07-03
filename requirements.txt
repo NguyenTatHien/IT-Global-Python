@@ -1,3 +1,6 @@
+flask
+flask_cors
+face_recognition
 easydict
 numpy
 tqdm
@@ -6,6 +9,3 @@ torch
 opencv-python
 Pillow
 tensorboardX
-flask
-flask_cors
-face_recognition
